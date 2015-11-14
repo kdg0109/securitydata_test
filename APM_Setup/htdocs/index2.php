@@ -1,0 +1,59 @@
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+
+<body>
+
+
+<?php
+echo("따옴표를 출력할 때는 \"이렇게…\"하면 됩니다.<br>");
+echo('특수문자를 모두 출력하고 싶을 때는 \"이렇게…\"하면 됩니다.');
+?>
+<?php
+$ID[ ] = 20091102;
+$ID[ ] = 20091203;
+
+$ID[ ] = 20094356;
+$ID["개나리"] = 20092934;
+$ID[ ] = 20092384;
+ $ID[ ] = 20092384;
+echo "\$ID[0] = $ID[0]<br>";
+echo "\$ID[1] = $ID[1]<br>";
+
+echo "\$ID[2] = $ID[2]<br>";
+echo "\$ID[\"개나리\"] = "; echo $ID["개나리"]; echo "<br>";
+echo "\$ID[3] = $ID[3]<br>";
+
+
+
+
+$Jumsu["개나리"]["국어"] = 80; 
+echo "개나리= ".$Jumsu["개나리"]["국어"].$ID["개나리"];
+
+$a = "하하하";
+$b = "즐겜";
+$a .= $b;
+echo "<br>".$a;
+echo "<br><br>"
+?>
+
+
+<?php
+for($A = 0; $A < 10; $A++){
+	echo "변수 \$A의 값은 현재 ${A}입니다.<br>";
+}
+?>
+
+<?php
+
+$data = array("딸기"=>"봄", "수박"=>"여름", "사과"=>"가을");
+foreach($data as $key => $season){
+	echo $key."-".$season."<br>";
+}
+
+?>
+
+
+</body>
+
+</html>
